@@ -1,73 +1,69 @@
 const Contact = () => {
   return (
-    <section id="contact" className="bg-black text-gray py-20 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-        {/* Left: Info */}
+    <section id="contact" className="bg-black text-[#f7f0b9] py-24 px-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+        
+        {/* Left: Contact Info */}
         <div>
-          <h2 className="text-3xl text-white sm:text-4xl font-bold mb-2">Get in Touch</h2>
-          <p className="text-gray mb-4">
-            Have a question or want to join? Fill out the form or reach us directly!
+          <h2 className="text-4xl font-extrabold mb-6">
+            Get in <span className="text-[#aa7f47]">Touch</span>
+          </h2>
+          <p className="text-[#f7f0b9]/80 mb-6">
+            Have questions or want to visit? We’re here to help.
           </p>
-
-          <div className="space-y-2 text-gray">
-            <div>
-              <span className="font-semibold text-white">Address:</span><br />
-              Spring Garden, Shahjalal Uposhohor, Sylhet, Bangladesh
-            </div>
-            <div>
-              <span className="font-semibold text-white">Phone:</span><br />
-              <a href="tel:01731106006" className="hover:text-[#f39f45]">01731-106006</a>
-            </div>
-            <div>
-              <span className="font-semibold text-white">Email:</span><br />
-              <a href="mailto:bootcampfitnessclub@gmail.com" className="hover:text-[#f39f45]">bootcampfitnessclub@gmail.com</a>
-            </div>
-            <div>
-              <span className="font-semibold text-white">Facebook:</span><br />
+          <ul className="space-y-4 text-[#f7f0b9]/90">
+            <li>
+              📍 <strong>Location:</strong> Sadik Tower, 7th Floor (Gents), 5th Floor (Ladies), Noya Sorok, Sylhet 3100
+            </li>
+            <li>
+              📞 <strong>Phone:</strong> <a href="tel:01312128494" className="text-[#aa7f47] hover:underline">01312-128494</a>
+            </li>
+            <li>
+              🔗 <strong>Facebook:</strong>{" "}
               <a
-                href="https://www.facebook.com/BootCampSylhet/"
+                href="https://www.facebook.com/thesylhetgym/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-[#f39f45]"
+                className="text-[#aa7f47] hover:underline"
               >
-                facebook.com/BootCampSylhet
+                facebook.com/thesylhetgym
               </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
-        {/* Right: Form */}
+        {/* Right: Contact Form */}
         <form className="space-y-6">
           <div>
-            <label className="block mb-1 font-semibold">Name</label>
+            <label className="block mb-1 text-sm font-medium">Your Name</label>
             <input
               type="text"
-              className="w-full p-3 bg-white/5 rounded-md border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f39f45]"
-              placeholder="Your Name"
-              
+              className="w-full bg-[#1a1a1a] text-white border border-[#aa7f47]/30 rounded-md px-4 py-2 focus:outline-none focus:border-[#aa7f47]"
+              placeholder="Enter your name"
+              required
             />
           </div>
           <div>
-            <label className="block mb-1 font-semibold">Email</label>
+            <label className="block mb-1 text-sm font-medium">Your Email</label>
             <input
               type="email"
-              className="w-full p-3 bg-white/5 rounded-md border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f39f45]"
-              placeholder="you@example.com"
-              
+              className="w-full bg-[#1a1a1a] text-white border border-[#aa7f47]/30 rounded-md px-4 py-2 focus:outline-none focus:border-[#aa7f47]"
+              placeholder="Enter your email"
+              required
             />
           </div>
           <div>
-            <label className="block mb-1 font-semibold">Message</label>
+            <label className="block mb-1 text-sm font-medium">Message</label>
             <textarea
-              rows="5"
-              className="w-full p-3 bg-white/5 rounded-md border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#f39f45]"
-              placeholder="Your message..."
-              
+              rows="4"
+              className="w-full bg-[#1a1a1a] text-white border border-[#aa7f47]/30 rounded-md px-4 py-2 focus:outline-none focus:border-[#aa7f47]"
+              placeholder="Write your message"
+              required
             ></textarea>
           </div>
           <button
             type="submit"
-            className="bg-white text-black font-bold py-3 px-6 rounded-md hover:bg-[#f39f45] transition"
+            className="bg-gold text-black px-6 py-2 rounded-full font-semibold hover:bg-white transition"
           >
             Send Message
           </button>

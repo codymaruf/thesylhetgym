@@ -1,31 +1,25 @@
-import { useState } from "react";
-
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-black text-gray sticky top-0 z-50">
+    <header className="bg-black text-gold sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-        
+
         {/* Logo */}
-        <div className="flex items-center">
-          {/* <img
-            className="h-10 w-10 rounded-full mr-3"
-            src="/assets/bootcamp.jpg"
-            alt="Boot Camp Fitness Logo"
-          /> */}
-          <span className="font-bold text-white">
-            BootCamp
-          </span>
+        <div className="flex items-center space-x-3">
+          <img
+            className="h-10 w-10 rounded-full"
+            src="assets/sylhet-gym.jpg"
+            alt="The Sylhet Gym Logo"
+          />
         </div>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6">
-          {["Home", "About", "Services", "Pricing", "Contact"].map((item) => (
+          {["Home", "Services", "Pricing", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="hover:text-orange transition"
+              className="hover:text-white transition"
             >
               {item}
             </a>
@@ -33,66 +27,18 @@ const Navbar = () => {
         </nav>
 
         {/* CTA */}
-        <div className="hidden md:block">
+        <div className="">
           <a
             href="#join"
-            className="bg-white text-black px-4 py-2 rounded-md font-semibold hover:bg-orange transition"
+            className="bg-gold text-black px-2 py-1.5 rounded-full font-medium text-sm sm:text-lx sm:font-semibold hover:bg-white transition"
           >
             Join Now
           </a>
         </div>
-
-        {/* Mobile Menu Button */}
-        <div className="md:hidden">
-          <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="text-white focus:outline-none"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-            >
-              {menuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
-        </div>
+        
       </div>
 
-      {/* Mobile Menu */}
-      {menuOpen && (
-        <div className="md:hidden px-4 pb-4 space-y-2">
-          {["Home", "About", "Services", "Pricing", "Contact"].map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
-              className="block hover:text-orange"
-            >
-              {item}
-            </a>
-          ))}
-          <a
-            href="#join"
-            className="block bg-orange text-black px-4 py-2 rounded-md font-semibold text-center"
-          >
-            Join Now
-          </a>
-        </div>
-      )}
+      
     </header>
   );
 };

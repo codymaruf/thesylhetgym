@@ -21,38 +21,50 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <section id="pricing" className="bg-black text-white py-20 px-6 text-center">
-      <div className="max-w-5xl mx-auto">
+    <section id="pricing" className="bg-black text-[#f7f0b9] py-24 px-6 text-center">
+      <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold mb-2">Membership Plans</h2>
-        <p className="text-gray text-xl font-bold mb-12">Choose the best fit</p>
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-4">
+          Membership Plans
+        </h2>
+        <p className="text-[#f7f0b9]/80 text-lg mb-12">
+          Choose the plan that fits your fitness journey.
+        </p>
 
         {/* Pricing Cards */}
-        <div className="flex flex-col md:flex-row gap-6 justify-center items-center">
+        <div className="flex flex-wrap justify-center gap-8">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`bg-gray/10 rounded-2xl p-8 w-full md:w-1/3 flex flex-col justify-between text-left ${
-                plan.highlight ? "border-2 border-white" : ""
+              className={`bg-[#1a1a1a] rounded-2xl p-8 w-full sm:w-[45%] md:w-[30%] flex flex-col justify-between text-left shadow-md transition transform ${
+                plan.highlight
+                  ? "border- border-[#aa7f47] hover:scale-105 shadow-[#aa7f47]/50"
+                  : "hover:border hover:border-[#aa7f47] hover:shadow-[#aa7f47]/50"
               }`}
             >
               <div>
-                <h3 className="text-lg font-semibold mb-2">{plan.name}</h3>
-                <p className="text-3xl font-bold mb-6">{plan.price}</p>
-                <ul className="space-y-2 mb-6">
+                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
+                <p className="text-3xl font-extrabold text-[#aa7f47] mb-6">
+                  {plan.price}
+                </p>
+                <ul className="space-y-3 mb-6">
                   {plan.features.map((feature, idx) => (
-                    <li key={idx} className="flex items-center text-gray-300">
-                      <span className="mr-2 text-[#f39f45]">✓</span> {feature}
+                    <li
+                      key={idx}
+                      className="flex items-center text-[#f7f0b9]/90"
+                    >
+                      <span className="mr-2 text-[#aa7f47]">✓</span>
+                      {feature}
                     </li>
                   ))}
                 </ul>
               </div>
               <button
-                className={`w-full py-2 rounded-md font-semibold ${
+                className={`w-full py-2 rounded-full font-semibold mt-auto ${
                   plan.highlight
-                    ? "bg-white text-black hover:bg-[#f39f45] transition"
-                    : "bg-black border border-white text-white hover:bg-[#f39f45] hover:text-black transition duration-200 ease-in-out"
-                }`}
+                    ? "bg-gold text-black hover:bg-white"
+                    : "border border-[#aa7f47] text-[#aa7f47] hover:bg-white hover:text-black"
+                } transition`}
               >
                 Sign Up
               </button>
