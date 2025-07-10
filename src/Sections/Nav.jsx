@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-3">
           <img
             className="h-10 w-10 rounded-full"
-            src="assets/sylhet-gym.jpg"
+            src="https://scontent.fzyl6-1.fna.fbcdn.net/v/t39.30808-6/273444651_2725312951109544_6220373451402881403_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGwjinRa9dRZsRVFJn4IKJKk9ArfbRrXT2T0Ct9tGtdPRg-tY1axTezBDH5g2fCM32UWc-d_YcLJXtQcC1CSWG6&_nc_ohc=MdhVWTG4lGEQ7kNvwFU2_Nx&_nc_oc=AdnFJd8jPkUs5hiIGO8vgIPnwwQOFDvaDsAk1TwGoqEmPpLNNalX-LnP1XVgeoXDCvo&_nc_zt=23&_nc_ht=scontent.fzyl6-1.fna&_nc_gid=KOAqmv0Kplb8qgq2PKL30g&oh=00_AfTDyicHgyPHowj3KFGbpudyxG3lHfghGPUJXfGQLWtFug&oe=687541ED"
             alt="The Sylhet Gym Logo"
           />
         </div>
