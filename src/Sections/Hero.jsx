@@ -10,7 +10,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg sm:text-xl max-w-2xl mb-8 text-[#f7f0b9]/90">
-          Welcome to The Sylhet Gym — Sylhet’s largest fitness center with expert trainers, modern equipment, and unbeatable energy.
+          Welcome to Dhaka GYM — Dhaka’s largest fitness center with expert trainers, modern equipment, and unbeatable energy.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4">
