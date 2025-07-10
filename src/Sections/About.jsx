@@ -14,7 +14,7 @@ const Programs = () => {
         <div>
           <h2 className="text-4xl sm:text-5xl font-extrabold mb-6 leading-tight">
             What We Offer <br />
-            <span className="text-[#aa7f47]">at The Sylhet Gym</span>
+            <span className="text-[#aa7f47]">at Dhaka GYM</span>
           </h2>
           <p className="text-lg text-[#f7f0b9]/80 mb-6">
             We don’t just help you lift weights — we build total body transformation systems through professional coaching, intelligent programming, and energy-packed classes.
